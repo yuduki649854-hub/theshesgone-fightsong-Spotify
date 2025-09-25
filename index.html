@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <title>ランダムジャンプ</title>
+    <script type="text/javascript">
+    <!--
+      var mylink = new Array( "https://open.spotify.com/track/7FIQhEnB15wXomarKjzvTK?si=Bzgy7E-TSkKrjje5fXKmoA",  "https://open.spotify.com/track/27FUEKrI5GK1JlBdvYVPRO?si=tgTUjkpuQDeREWqML-J09A&context=spotify%3Aalbum%3A6AEKlmz50QcOuLeIpPxuUE","https://open.spotify.com/track/0bWnId0mY25pHeFISHR9V1?si=sVra-PP3SBq0CKM0PvkqKQ&context=spotify%3Aalbum%3A4FGWU6jdrl9SDFvBFjh7vr" );
+      function random_jump() {
+        var i = Math.floor(Math.random() * mylink.length);
+        location.href = mylink[i];
+      }
+    // -->
+    </script>
+  </head>
+  <body>
+    <h1>🎵the shes gone~背中を押してくれる曲~🎵</h1>
+    <a href="javascript:random_jump();">Spotifyで曲を聞く</a>
+  </body>
+</html>
